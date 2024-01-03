@@ -15,12 +15,12 @@ let cpuGenerator = extracNumber(2);
 
 cpu += cpuGenerator.next().value; //two roll for the cpu.
 cpu += cpuGenerator.next().value;
-
+console.log("CPU gets: " + cpu);
 //now the player will roll the dice
 
 let playerGenerator = extracNumber(2);
 player += playerGenerator.next().value;
 player += playerGenerator.next().value;
-
+console.log("Player gets: " + player);
 let show = document.getElementById("result");
 show.innerText = cpu > player ? "CPU WIN" : "Player wins";
